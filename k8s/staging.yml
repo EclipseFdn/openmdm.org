@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: staging.openmdm.org
+  namespace: foundation-internal-webdev-apps
+spec:
+  selector:
+    matchLabels:
+      app: openmdm.org
+      environment: staging
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: openmdm.org
+        environment: staging
+    spec:
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - preference:
+              matchExpressions:
+              - key: speed
+                operator: NotIn
+                values:
+                - fast
+            weight: 1
+      containers:
+      - name: nginx
+        image: eclipsefdn/openmdm.org
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 500m
+            memory: 128Mi
+          requests:
+            cpu: 200m
+            memory: 64Mi
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: lts-staging-eclipse-org
+  namespace: foundation-internal-webdev-apps
+spec:
+  ports:
+  - name: "http"
+    port: 80
+    protocol: "TCP"
+    targetPort: 8080
+  selector:
+    app: openmdm.org
+    environment: staging
+---
+apiVersion: "route.openshift.io/v1"
+kind: "Route"
+metadata:
+  name: staging.openmdm.org
+  namespace: foundation-internal-webdev-apps
+  annotations:
+    haproxy.router.openshift.io/timeout: 20s
+    haproxy.router.openshift.io/disable_cookies: "true"
+    haproxy.router.openshift.io/balance: roundrobin
+spec:
+  host: "staging.openmdm.org"
+  path: "/"
+  port:
+    targetPort: "http"
+  tls:
+    insecureEdgeTerminationPolicy: "Redirect"
+    termination: "edge"
+  to:
+    kind: "Service"
+    name: staging-openmdm-org
+    weight: 100

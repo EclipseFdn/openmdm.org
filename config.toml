@@ -1,0 +1,49 @@
+baseurl = "https://openmdm.org/"
+DefaultContentLanguage = "en"
+title = "OpenMDM - Measured Data Management"
+theme = "eclipsefdn-hugo-solstice-theme"
+metaDataFormat = "yaml"
+disableKinds = []
+themesDir = "node_modules/"
+enableRobotsTXT = true
+pluralizeListTitles = false
+
+[Params]
+  google_tag_manager = "GTM-5WLCZXC"
+  description = "openMDM® 5 is a kit of components and concepts, which can be used to compose applications for measured data management systems. The development of components and concepts is driven by the openMDM® Eclipse Working Group. All components and concepts are published under the Eclipse Public License."
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = ["eclipse openmdm", "openmdm", "open source openmdm", "eclipse opemdm"]
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  js = "js/solstice.js"
+  logo = "images/logo/openmdm.png"
+  styles = "css/styles.css"
+# favicon = ""
+# share_img = ""
+# header_wrapper_class = ""
+# logo_width = ""
+# header_left_classes = ""
+# main_menu_wrapper_classes = ""
+featured_content_publish_target = "openmdm"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  membership_level = "membership_levels"
+  participation_level = "participation_levels"
+
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
