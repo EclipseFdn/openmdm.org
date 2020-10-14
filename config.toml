@@ -47,3 +47,33 @@ featured_content_publish_target = "openmdm"
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[[menu.main]]
+    name = "Overview"
+    url = "/overview"
+    weight = 1
+    
+[[menu.main]]
+    name = "Technology"
+    url = "/projects"
+    weight = 2
+    
+[[menu.main]]
+    name = "Working Groups"
+    url = "/membership"
+    weight = 3
+    
+[[menu.main]]
+    name = "Members"
+    url = "/working-groups"
+    weight = 4
+    
+[[menu.main]]
+    name = "News"
+    url = "/resources/openhwtv/"
+    weight = 5
+    
+[[menu.main]]
+    name = "Contact"
+    url = "/#contact-us"
+    weight = 6
