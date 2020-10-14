@@ -1,0 +1,64 @@
+types:
+  - name: driver members
+    items:
+       -
+         image: /images/members/driver/audi-logo.jpg
+         title: Audi AG
+         link: http://www.audi.de
+         img_width: 100
+       -
+         image: /images/members/driver/siemens.gif
+         title: Siemens
+         link: https://www.siemens.com/global/en.html
+         img_width: 120
+       -
+         image: /images/members/driver/mueller.jpg
+         title: Müller-BBM VibroAkustik Systeme GmbH
+         link: http://www.muellerbbm-vas.de
+         img_width: 100
+       -
+         image: /images/members/driver/bmw-logo.jpg
+         title: BMW Group
+         link: http://www.bmwgroup.com
+         img_width: 100
+
+  - name: service provider members
+    items:
+       -
+         image: /images/members/service-provider/karakun.png
+         title: Karakun AG
+         link: https://karakun.com/
+         img_width: 150
+       -
+         image: /images/members/service-provider/peak.jpg
+         title: Peak Solution GmbH
+         link: http://www.peak-solution.de
+         img_width: 100
+       -
+         image: /images/members/service-provider/sicence-computing.png
+         title: Science+ Computing AG
+         img_width: 100
+
+  - name: application vendor members
+    items:
+       -
+         image: /images/members/application-vendor/hq.jpg
+         title: HighQSoft GmbH
+         link: https://www.openmdm.org/content/highqsoft-gmbh
+         img_width: 100
+
+  - name: user members
+    items:
+       -
+         image: /images/members/user/tata.jpg
+         title: Tata Motors Ltd.
+         link: https://www.tatamotors.com
+         img_width: 100
+
+  - name: guest members
+    items:
+       -
+         image: /images/members/guest/asam-logo.png
+         title: ASAM e.V
+         link: https://www.asam.net/
+         img_width: 150

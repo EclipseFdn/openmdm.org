@@ -75,34 +75,7 @@
           <div id="copyright" class="col-md-16">
             <p id="copyright-text">Copyright © Eclipse Foundation, Inc. All Rights Reserved.</p>
           </div>
-          <div class="col-md-8 social-media">
-            <ul class="list-inline">
-              <li>
-                <a class="social-media-link fa-stack fa-lg" href="https://twitter.com/EclipseFdn">
-                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x"></i>
-                </a>
-              </li>
-              <li>
-                <a class="social-media-link fa-stack fa-lg" href="https://www.facebook.com/eclipse.org">
-                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x"></i>
-                </a>
-              </li>
-              <li>
-                <a class="social-media-link fa-stack fa-lg" href="https://www.youtube.com/user/EclipseFdn">
-                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                  <i class="fa fa-youtube fa-stack-1x"></i>
-                </a>
-              </li>
-              <li>
-                <a class="social-media-link fa-stack fa-lg" href="https://www.linkedin.com/company/eclipse-foundation">
-                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          {{ partial "socials.html" . }}
         </div>
       </div><a href="#" class="scrollup" style="display: inline;">Back to the top</a>
     </div>
@@ -117,6 +90,11 @@
 <script>
   (function($, document) {
   // Eclipse News and events
+  {{ range (.Page.Scratch.Get "events-container-ids") }}
+    $("#{{ . }}").eclipseFdnApi({
+      type: "filteredEvents"
+    });
+  {{ end }}
   {{ range (.Page.Scratch.Get "news-container-ids") }}
     $("#{{ . }}").eclipseFdnApi({
       type: "newsItems"

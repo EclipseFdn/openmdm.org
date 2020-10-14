@@ -1,0 +1,13 @@
+<div id="members-partners" class="featured-partners container text-center padding-top-30 padding-bottom-40">
+    <h2 class="header-underline">Our Members</h2>
+    <div class="row">
+        <ul class="list-inline">
+        {{ range $members := .Site.Data.members.types }}
+            {{ range $members.items }}
+            <li class="margin-20"><a href="{{ .link }}"><img width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a></li>
+            {{ end }}
+        {{ end }}
+        </ul>
+    </div>
+    <a href="/members" class="btn btn-primary">More members</a>
+</div>

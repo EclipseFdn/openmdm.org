@@ -20,22 +20,16 @@
   background-repeat: no-repeat;
   background-position: top;
   min-height: 350px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid @border-color;
 
   h2 {
     font-weight: 700;
-    font-size: 2.7em;
+    font-size: 43px;
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 20px;
   }
-}
-
-.vertical-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .text-white {
@@ -45,46 +39,35 @@
 }
 
 .menu-dark {
-  border-left: 1px solid #18526c;
+  border-left: 1px solid @brand-quinary;
 }
 
 .menu-dark:hover {
-  background-color: #18526c;
+  background-color: @brand-quinary;
   cursor: pointer;
 }
 
 .border-right {
-  border-right: 1px solid #18526c;
+  border-right: 1px solid @brand-quinary;
 }
 
 .background-dark {
-  background-color: #217196;
+  background-color: @brand-quaternary;
 }
 
 .fa-icon {
   font-size: 3.8em;
 }
-// .header-wrapper .featured-jumbotron{
-//   background-image: url('/images/openmdm-slideshow-bg.jpg');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: top;
-//   padding-top: 60px;
-//   padding-bottom: 60px;
 
-//   p:last-child{
-//     margin-bottom:0;
-//   }
-//   p, h1 {
-//     color: black;
-//   }
-// }
+.header-wrapper .featured-jumbotron{
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.openmdm {
-  #news-list-container {
-    .block-summary-item {
-      background-color: transparent;
-    }
+  p:last-child{
+    margin-bottom:0;
+  }
+  p, h2 {
+    color: black;
   }
 }
 
@@ -97,11 +80,18 @@
   padding-bottom:0;
   h2.heading-line  {
     text-align:center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid @border-color;
     padding-bottom: 5px;
   }
 }
 
 .featured-footer{
   margin-top:50px;
+}
+
+
+@media (max-width: 767px) {
+  .border-bottom {
+    border-bottom: 1px solid @brand-quinary;
+}
 }

@@ -1,30 +1,23 @@
-{{ if eq .Page.Params.show_jumbotron true }}
 
-<div class="container-fluid vertical-center custom-jumbotron">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-4">
-    <h2><a href="https://www.openmdm.org/about-openmdm/how-does-it-work">Plan. Measure. Share.</a></h2>
-    <p>And simplify your measured data management.</p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid background-dark">
+{{ if isset .Page.Params "headline" }}
+<div class="custom-jumbotron jumbotron featured-jumbotron vertical-align margin-bottom-0 padding-top-40">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 vertical-align flex-column text-white menu-dark">
-        <i class="fa fa-user-plus fa-icon padding-top-30"></i><h3 class="padding-bottom-30"><a href="https://www.openmdm.org/working-group/register">Register</a></h3>
+      {{ if .IsHome }}
+	      <div class="col-sm-12">
+            <h2><a href="https://www.openmdm.org/about-openmdm/how-does-it-work">Plan. Measure. Share.</a></h2>
+            <p>And simplify your measured data management.</p>
+	      </div>
+      {{ end }}
       </div>
-      <div class="col-xs-12 col-sm-6 vertical-align flex-column text-white menu-dark">
-        <i class="fa fa-newspaper-o fa-icon padding-top-30"></i><h3 class="padding-bottom-30"><a href="https://www.openmdm.org/news">News</a></h3>
-      </div>
-      <div class="col-xs-12 col-sm-6 vertical-align flex-column text-white menu-dark">
-        <i class="fa fa-rocket fa-icon padding-top-30"></i><h3 class="padding-bottom-30"><a href="https://www.openmdm.org/technology/principles">Technology</a></h3>
-      </div>
-      <div class="col-xs-12 col-sm-6 vertical-align flex-column text-white border-right menu-dark">
-        <i class="fa fa-users fa-icon padding-top-30"></i><h3 class="padding-bottom-30"><a href="https://www.openmdm.org/members-list">Members</a></h3>
-      </div>
+      {{ if isset .Page.Params "links" }}
+        <ul class="list-inline{{ cond (isset .Page.Params "tagline") " padding-top-30" "" }}">
+            {{range $key,$val := index .Page.Params.links}}
+                <li><a class="btn btn-primary" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
+            {{end}} 
+        </ul>
+     {{end}} 
     </div>
   </div>
 </div>
-
 {{ end }}

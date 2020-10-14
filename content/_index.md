@@ -10,18 +10,24 @@ hide_breadcrumb: true
 hide_sidebar: true
 hide_page_title: true
 header_wrapper_class: openmdm-jumbotron-class
-show_jumbotron: true
+container: "container-fluid"
 ---
 
+{{< home-menu-dark >}}
+
 {{< grid/section-container >}}
-  {{< grid/div class="col-sm-12 margin-top-30" isMarkdown="false" >}}
+  {{< grid/div class="col-sm-15 margin-top-30" isMarkdown="false" >}}
     {{< newsroom/news
           title="News"
           titleClass="heading-line text-center"
           id="news-list-container"
-          publishTarget="jakarta_ee"
-          type="community_news"
+          publishTarget="openmdm"
           count="5"
           includeList="true" >}}
   {{</ grid/div >}}
+  {{< grid/div class="col-sm-8 col-sm-offset-1 margin-top-30" isMarkdown="false" >}}
+    {{< events >}}
+  {{</ grid/div >}}
 {{</ grid/section-container >}}
+
+{{< home-members >}}
