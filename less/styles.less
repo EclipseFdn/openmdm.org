@@ -46,15 +46,24 @@
     p:last-child{
       margin-bottom:0;
     }
-    h2, h1 {
-      color: @jumbotron-link-color;
-    }
+
     p {
       color: @default-text-color;
       font-weight: 300;
     }
 
+    .btn {
+      background-color: @brand-tertiary;
+      border-color: @brand-tertiary;
+
+      &:hover {
+        background-color: @brand-quaternary;
+        border-color: @brand-quaternary;
+      }
+    }
+
     h1 {
+      color: @jumbotron-title-color;
       margin-bottom:10px;
       &:after {
         display:none;
