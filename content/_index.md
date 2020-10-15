@@ -10,8 +10,9 @@ layout: "single"
 hide_breadcrumb: true
 hide_sidebar: true
 hide_page_title: true
+show_featured_story: true
 container: "container-fluid"
-links: [[href: "https://accounts.eclipse.org/mailing-list/open-measured-data-wg", text: "Join Our Mailing List"], [href: "https://wiki.eclipse.org/Open-Measured-Data-Management-WG#Steering_Committee", text: "Learn More"]]
+links: [[href: "/overview/how-does-it-work", text: "Plan. Measure. Share."], [href: "https://wiki.eclipse.org/Open-Measured-Data-Management-WG#Steering_Committee", text: "Learn More"]]
 ---
 
 {{< grid/section-container >}}
