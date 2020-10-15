@@ -1,15 +1,15 @@
-<div id="members-partners" class="featured-partners container text-center padding-top-30 padding-bottom-40">
+<div id="members" class="container text-center padding-top-30 padding-bottom-40">
     <h2 class="header-underline">Our Members</h2>
-    <div class="row text-center">
-        <ul class="list-inline">
+    <div class="container vertical-align members-container">
         {{ range $members := .Site.Data.members.types }}
             {{ range $members.items }}
-            <li class="margin-20">
-                <a href="{{ .link }}"><img width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a>
-            </li>
+            <div class="col-sm-4 col-xs-8 match-height-item vertical-align margin-right-20 margin-bottom-20 background-white bordered-box" data-match-height="members">
+                <a href="{{ .link }}" class="padding-5">
+                    <img class="img img-responsive"  src="{{ .image }}" alt="{{ .title }}" width="{{ .img_width }}" />
+                </a>
+            </div>
             {{ end }}
         {{ end }}
-        </ul>
     </div>
     <a href="/members" class="btn btn-primary">More members</a>
 </div>
