@@ -29,8 +29,9 @@ links: [[href: "/overview/how-does-it-work", text: "Plan. Measure. Share."], [hr
   {{</ grid/div >}}
   {{< grid/div class="col-sm-8 col-sm-offset-1 margin-top-30" isMarkdown="false" >}}
     {{< newsroom/events
-          title="events"
+          title="Events"
           titleClass="heading-line text-center"
+          containerClass="news-items event-container"
           id="events-list-container"
           publishTarget="openmdm"
           count="5"

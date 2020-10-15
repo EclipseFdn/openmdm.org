@@ -6,13 +6,12 @@ seo_title: "Interfaces"
 keywords: ["openmdm", "interfaces"]
 ---
 
-* Programming interfaces on complete business model
-* Open documentation and version structuring of the interfaces in CORBA-IDL
-* Connection to external systems via standardised attribute mapping and a standard component
-* Expandability by adding own in-house components
-* Connection into company-wide authentication system (single sign-on)
-
-* List of coupled applications:
++ Programming interfaces on complete business model
++ Open documentation and version structuring of the interfaces in CORBA-IDL
++ Connection to external systems via standardised attribute mapping and a standard component
++ Expandability by adding own in-house components
++ Connection into company-wide authentication system (single sign-on)
++ List of coupled applications:
     * Matlab (Mathworks)
     * Famos (IMC)
     * Diadem (National Instruments)
@@ -23,8 +22,7 @@ keywords: ["openmdm", "interfaces"]
     * TestLab (LMS)
     * TecWare (LMS)
     * ...and many others
-
-* Importer/Exporter:
++ Importer/Exporter:
     * Order interface (MDM-XML)
     * Excel (MS)
     * RPC II (MTS)
