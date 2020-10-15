@@ -1,0 +1,12 @@
+{{ range $member_types := .Site.Data.members.types }}
+<h2>{{ $member_types.name }}</h2>
+<div class="row container">
+    {{ range $member_types.items }}
+    <div class="col-sm-4 col-xs-8 match-height-item vertical-align margin-right-20 margin-bottom-20 background-white bordered-box">
+        <a href="{{ .link }}" class="padding-5">
+            <img class="img img-responsive"  src="{{ .image }}" alt="{{ .title }}" width="{{ .img_width }}" />
+        </a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

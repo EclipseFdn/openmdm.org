@@ -1,5 +1,5 @@
 types:
-  - name: driver members
+  - name: Driver Members
     items:
        -
          image: /images/members/driver/audi-logo.jpg
@@ -22,7 +22,7 @@ types:
          link: http://www.bmwgroup.com
          img_width: 100
 
-  - name: service provider members
+  - name: Service Provider Members
     items:
        -
          image: /images/members/service-provider/karakun.png
@@ -39,7 +39,7 @@ types:
          title: Science+ Computing AG
          img_width: 100
 
-  - name: application vendor members
+  - name: Application Vendor Members
     items:
        -
          image: /images/members/application-vendor/hq.jpg
@@ -47,7 +47,7 @@ types:
          link: https://www.openmdm.org/content/highqsoft-gmbh
          img_width: 100
 
-  - name: user members
+  - name: User Members
     items:
        -
          image: /images/members/user/tata.jpg
@@ -55,7 +55,7 @@ types:
          link: https://www.tatamotors.com
          img_width: 100
 
-  - name: guest members
+  - name: Guest Members
     items:
        -
          image: /images/members/guest/asam-logo.png
