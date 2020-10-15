@@ -22,10 +22,20 @@ links: [[href: "https://accounts.eclipse.org/mailing-list/open-measured-data-wg"
           id="news-list-container"
           publishTarget="openmdm"
           count="5"
+          templateId="news-no-mh"
+          templatePath="node_modules/eclipsefdn-hugo-solstice-theme/js/templates/news-no-mh.mustache"
           includeList="true" >}}
   {{</ grid/div >}}
   {{< grid/div class="col-sm-8 col-sm-offset-1 margin-top-30" isMarkdown="false" >}}
-    {{< events >}}
+    {{< newsroom/events
+          title="events"
+          titleClass="heading-line text-center"
+          id="events-list-container"
+          publishTarget="openmdm"
+          count="5"
+          templateId="event-list-format"
+          templatePath="node_modules/eclipsefdn-hugo-solstice-theme/js/templates/event-list-format.mustache"
+          includeList="true" >}}
   {{</ grid/div >}}
 {{</ grid/section-container >}}
 

@@ -8,4 +8,6 @@ publishdate: 2019-02-21
       id="news-list-container"
       publishTarget="openmdm"
       count="10"
+      templateId="news-no-mh"
+      templatePath="node_modules/eclipsefdn-hugo-solstice-theme/js/templates/news-no-mh.mustache"
       paginate="true" >}}
