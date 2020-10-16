@@ -14,12 +14,61 @@
 @import '~eclipsefdn-solstice-assets/less/quicksilver/openmdm/styles.less';
 @import '_variables.less';
 
+#main-menu {
+  clear: both;
+}
 
-.header-wrapper .featured-jumbotron{
-  background: @jumbotron-bg-color;
-  padding-top:48px;
-  p:last-child{
-    margin-bottom:0;
+.fa-icon {
+  font-size: 3.8em;
+}
+
+.header-wrapper {
+
+  position:relative;
+
+  .featured-jumbotron {
+    background-image: url('/images/openmdm-slideshow-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 350px;
+    
+    text-align: left;
+
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+
+    .list-inline {
+      margin-top: 20px;
+    }
+  
+    p:last-child{
+      margin-bottom:0;
+    }
+
+    p {
+      color: @default-text-color;
+      font-weight: 300;
+    }
+
+    .btn {
+      background-color: @brand-tertiary;
+      border-color: @brand-tertiary;
+
+      &:hover {
+        background-color: @brand-quaternary;
+        border-color: @brand-quaternary;
+      }
+    }
+
+    h1 {
+      color: @jumbotron-title-color;
+      margin-bottom:10px;
+      &:after {
+        display:none;
+      }
+    }
   }
 }
 
@@ -32,11 +81,31 @@
   padding-bottom:0;
   h2.heading-line  {
     text-align:center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid @border-color;
     padding-bottom: 5px;
+  }
+}
+
+.event-container {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+#members {
+  .members-container {
+    flex-wrap: wrap;
   }
 }
 
 .featured-footer{
   margin-top:50px;
+}
+
+@media (max-width: 767px) {
+  .header-wrapper {
+    .featured-jumbotron {
+      background-position: center;
+    }
+  }
 }

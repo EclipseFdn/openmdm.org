@@ -23,7 +23,10 @@ pluralizeListTitles = false
 # logo_width = ""
 # header_left_classes = ""
 # main_menu_wrapper_classes = ""
-featured_content_publish_target = "openmdm"
+  featured_content_publish_target = "openmdm"
+  call_for_action_text = "Download"
+  call_for_action_url = "//www.eclipse.org/downloads/"
+  call_for_action_icon = "fa-download"
 
 [taxonomies]
   category = "categories"
@@ -47,3 +50,126 @@ featured_content_publish_target = "openmdm"
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[[menu.main]]
+    name = "Overview"
+    url = "/overview"
+    weight = 1
+    
+[[menu.main]]
+    name = "Technology"
+    url = "/technology"
+    weight = 2
+    
+[[menu.main]]
+    name = "Working Groups"
+    url = "/working-groups"
+    weight = 3
+    
+[[menu.main]]
+    name = "Members"
+    url = "/members"
+    weight = 4
+    
+[[menu.main]]
+    name = "News"
+    url = "/news"
+    weight = 5
+    
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 6
+
+# Overview sub-menu
+[[menu.main]]
+    name = "How it works"
+    url = "/overview/how-does-it-work"
+    parent = "Overview"
+    weight = 1
+
+[[menu.main]]
+    name = "What is it"
+    url = "/overview/about-openmdm"
+    parent = "Overview"
+    weight = 2
+
+[[menu.main]]
+    name = "Why choose"
+    url = "/overview/why-choose"
+    parent = "Overview"
+    weight = 3
+
+[[menu.main]]
+    name = "History"
+    url = "/overview/history"
+    parent = "Overview"
+    weight = 4
+
+[[menu.main]]
+    name = "ASAM ODS"
+    url = "/overview/asam-ods"
+    parent = "Overview"
+    weight = 5
+
+# Technology sub-menu
+[[menu.main]]
+    name = "Architecture"
+    url = "/technology/architecture"
+    parent = "Technology"
+    weight = 1
+
+[[menu.main]]
+    name = "Interfaces"
+    url = "/technology/interfaces"
+    parent = "Technology"
+    weight = 2
+
+[[menu.main]]
+    name = "Principles"
+    url = "/technology/principles"
+    parent = "Technology"
+    weight = 3
+
+[[menu.main]]
+    name = "Related Eclipse Projects"
+    url = "/technology/related-eclipse-projects"
+    parent = "Technology"
+    weight = 4
+
+[[menu.main]]
+    name = "Specifications"
+    url = "/technology/specifications"
+    parent = "Technology"
+    weight = 5
+
+# Working Groups sub-menu
+[[menu.main]]
+    name = "Scope"
+    url = "/working-groups/scope"
+    parent = "Working Groups"
+    weight = 1
+
+[[menu.main]]
+    name = "Collaboration"
+    url = "/working-groups/collaboration"
+    parent = "Working Groups"
+    weight = 2
+
+[[menu.main]]
+    name = "Governance"
+    url = "/working-groups/governance"
+    parent = "Working Groups"
+    weight = 3
+
+[[menu.main]]
+    name = "Membership"
+    url = "/working-groups/membership"
+    parent = "Working Groups"
+    weight = 4
+
+[[menu.main]]
+    name = "Participation"
+    url = "/working-groups/participation"
+    parent = "Working Groups"
+    weight = 5
