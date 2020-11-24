@@ -28,8 +28,3 @@ HUGO_VERSION = "0.76.5"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
-
-[[redirects]]
-  from = "https://community.openmdm.org"
-  to = "/"
-  status = 302
