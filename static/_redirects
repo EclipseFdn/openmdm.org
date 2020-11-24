@@ -2,4 +2,4 @@
 http://community.openmdm.org/* https://openmdm.org/:splat 301!
 https://community.openmdm.org/* https://openmdm.org/:splat 301!
 http://demo.openmdm.org/* https://demo.openmdm.org/:splat 301!
-https://demo.openmdm.org/* http://13.80.252.255/:splat 200
+https://demo.openmdm.org/* http://13.80.252.255/:splat 200!
