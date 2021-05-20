@@ -36,6 +36,7 @@ links: [[href: "/overview/how-does-it-work", text: "Plan. Measure. Share."], [hr
           publishTarget="openmdm"
           count="5"
           templateId="event-list-format"
+          upcoming="true"
           templatePath="node_modules/eclipsefdn-hugo-solstice-theme/js/templates/event-list-format.mustache"
           includeList="true" >}}
   {{</ grid/div >}}
