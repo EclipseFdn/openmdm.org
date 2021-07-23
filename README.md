@@ -11,7 +11,7 @@ openMDM® 5 is a kit of components and concepts, which can be used to compose ap
 Install dependencies, build assets and start a webserver:
 
 ```bash
-npm install && hugo server
+yarn && hugo server
 ```
 
 You can find guidance on the page-level metadata [here](https://eclipsefdn.github.io/hugo-solstice-theme/), and examples of the assorted page types (components) [here](https://eclipsefdn.github.io/hugo-solstice-theme/components/).
@@ -41,7 +41,7 @@ Images, less and JavaScript files for the Eclipse Foundation look and feel.
 
 ### [EclipseFdn/hugo-solstice-theme](https://github.com/EclipseFdn/hugo-solstice-theme)
 
-Hugo theme of the Eclipse Foundation look and feel. 
+Hugo theme of the Eclipse Foundation look and feel.
 
 ## Bugs and feature requests
 
