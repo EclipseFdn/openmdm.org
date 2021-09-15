@@ -4,8 +4,6 @@ The [https://openmdm.org](https://openmdm.org) website is generated with [Hugo](
 
 openMDM® 5 is a kit of components and concepts, which can be used to compose applications for measured data management systems. The development of components and concepts is driven by the openMDM® Eclipse Working Group. All components and concepts are published under the Eclipse Public License.
 
-[![Build Status](https://travis-ci.org/eclipsefdn/openmdm.org.svg?branch=master)](https://travis-ci.org/eclipsefdn/openmdm.org)
-
 ## Getting started
 
 Install dependencies, build assets and start a webserver:
