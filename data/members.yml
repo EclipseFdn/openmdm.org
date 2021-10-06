@@ -2,11 +2,6 @@ types:
   - name: Driver Members
     items:
        -
-         image: /images/members/driver/audi-logo.jpg
-         title: Audi AG
-         link: http://www.audi.de
-         img_width: 100
-       -
          image: /images/members/driver/siemens.gif
          title: Siemens
          link: https://www.siemens.com/global/en.html
@@ -33,18 +28,6 @@ types:
          image: /images/members/service-provider/peak.jpg
          title: Peak Solution GmbH
          link: http://www.peak-solution.de
-         img_width: 100
-       -
-         image: /images/members/service-provider/sicence-computing.png
-         title: Science+ Computing AG
-         img_width: 100
-
-  - name: Application Vendor Members
-    items:
-       -
-         image: /images/members/application-vendor/hq.jpg
-         title: HighQSoft GmbH
-         link: https://www.openmdm.org/content/highqsoft-gmbh
          img_width: 100
 
   - name: User Members
