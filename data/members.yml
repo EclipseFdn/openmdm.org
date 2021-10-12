@@ -30,14 +30,6 @@ types:
          link: http://www.peak-solution.de
          img_width: 100
 
-  - name: User Members
-    items:
-       -
-         image: /images/members/user/tata.jpg
-         title: Tata Motors Ltd.
-         link: https://www.tatamotors.com
-         img_width: 100
-
   - name: Guest Members
     items:
        -
