@@ -1,5 +1,12 @@
 # openmdm.org
 
+---
+**NOTE**
+
+This project was migrated to [Eclipse Gitlab](https://gitlab.eclipse.org/eclipsefdn/it/websites/openmdm.org) on March 14, 2022.
+
+---
+
 The [https://openmdm.org](https://openmdm.org) website is generated with [Hugo](https://gohugo.io/documentation/).
 
 openMDM® 5 is a kit of components and concepts, which can be used to compose applications for measured data management systems. The development of components and concepts is driven by the openMDM® Eclipse Working Group. All components and concepts are published under the Eclipse Public License.
